@@ -12,8 +12,9 @@
       </div>
     </nav>
     <div class="container">
-      <p>{{user.name}}</p>
-      <p>{{user.email}}</p>
+      <pre>{{ user }}</pre>
+      <p>{{ user.name }}</p>
+      <p>{{ user.email }}</p>
     </div>    
   </div>
 </template>
@@ -32,11 +33,11 @@ export default {
   methods:{
     getUserDetails(){
       let token = localStorage.getItem('jwt');
-      // let user = localStorage.getItem('user');
+      //let user = localStorage.getItem('user');
       let user = VueJwtDecode.decode(token);
       console.log(user);
       if(token){
-        // this.user = JSON.parse(user)
+        //this.user = JSON.parse(user)
         this.user = user
       }
     },

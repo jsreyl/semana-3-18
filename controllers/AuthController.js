@@ -12,7 +12,7 @@ exports.signin = async (req, res, next)=>{
                 //Second argument 'config.secret' is a secret key to encrypt the token
                 const token = jwt.sign({
                     id: user.id,
-                    name: user.username,
+                    name: user.name,
                     email: user.email,
                 }, 'config.secret',{
                     expiresIn: 3600, //seconds, i.e. 1hour

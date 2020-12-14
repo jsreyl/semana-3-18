@@ -1,22 +1,24 @@
 <template>
-    <div>
-    <router-link to="/asesoria">Asesorias</router-link>
-    <h1>AAAAAAAAAAAAAAAAAAAAA</h1>    
-    <p>Esta es la página de servicios</p>
+  <div class="about">
+    <router-link to="/asesoria">Asesories</router-link>
+    <h1>SERVICES</h1>
+    <p>Here you have access to all kind of technologic services</p>
+    <ServicesC></ServicesC>
     <HelloWorld></HelloWorld>
-    </div>
+  </div>
 </template>
 
 <script>
-import HelloWorld from '@/components/HelloWorld.vue'
+import HelloWorld from "@/components/HelloWorld.vue";
+import ServicesC from "@/components/ServicesC.vue";
 
 export default {
-    components: {
-        HelloWorld
-    }
-}
+  components: {
+    HelloWorld,
+    ServicesC,
+  },
+};
 </script>
 
 <style scoped>
-
 </style>

@@ -5,7 +5,7 @@
 </template>
 
 <script>
-import TheLogin from "@/components/auth/TheLogin.vue";
+import TheLogin from "@/components/auth/TheLogin";
 export default {
     components:{
         TheLogin
